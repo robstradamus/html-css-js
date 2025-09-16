@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Prestamo Libros</title>
+</head>
+<body>
+    <form action="">
+        <h2>Formulario de Prestamo de Libro</h2>
+        <label for="">Seleccione un Libro: </label>
+        <select name="libro" id="libro">
+            <option value="">---Seleccione</option>
+            <option value="Divergente">Divergente</option>
+            <option value="Frozen">Frozen</option>
+            <option value="Sirenas">Sirenas</option>
+            <option value="Insurgente">Insurgente</option>
+        </select>
+
+        <button type="button" onclick="verificarPrestamo()">Verificar</button>
+
+        <label for="">Situacion:</label>
+        <input type="text" id="situacion" readonly>
+
+        <label for="">Fecha de Devolucion:</label>
+        <input type="text" id="fechaDevolucion" readonly>
+    
+    </form>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
