@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Venta</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h2>Formulario de Venta</h2>
+
+    <div class="fila-articulos">
+
+        <div class="articulo">
+            <h3>Artículo 1</h3>
+            <label>Artículo</label>
+            <select onchange="actualizarPrecio(this, 0)">
+                <option value="">--Seleccione un Artículo</option>
+                <option value="Vaio Intel Core i3">Notebook Vaio Intel Core i3</option>
+                <option value="Lenovo Intel Core i7">Notebook Lenovo Intel Core i7</option>
+                <option value="Compaq Intel Cre i7">Notebook Compaq Intel Core i7</option>
+                <option value="RCA Intel Core i3">Notebook RCA Intel Core i3</option>
+                <option value="BGH Core i7">Notebook Positivo BGH Core i7</option>
+                <option value="Impresora HP">Impresora Multifunción HP</option>
+                <option value="Tablet Philco">Tablet Philco Intel 16GB</option>
+                <option value="Tablet Huawei">Tablet Huawei 16GB</option>
+            </select>
+
+            <label>Precio Unitario</label>
+            <input type="text" id="precio0" readonly>
+
+            <label>Cantidad</label>
+            <input type="number" id="cantidad0" min="1">
+
+            <button onclick="calcularSubtotal(0)">Subtotal</button>
+
+            <label>Subtotal</label>
+            <input type="text" id="subtotal0" readonly>
+        </div>
+
+        <div class="articulo">
+            <h3>Artículo 2</h3>
+            <label>Artículo</label>
+            <select onchange="actualizarPrecio(this, 1)">
+                <option value="">--Seleccione un Artículo</option>
+                <option value="Vaio Intel Core i3">Notebook Vaio Intel Core i3</option>
+                <option value="Lenovo Intel Core i7">Notebook Lenovo Intel Core i7</option>
+                <option value="Compaq Intel Cre i7">Notebook Compaq Intel Core i7</option>
+                <option value="RCA Intel Core i3">Notebook RCA Intel Core i3</option>
+                <option value="BGH Core i7">Notebook Positivo BGH Core i7</option>
+                <option value="Impresora HP">Impresora Multifunción HP</option>
+                <option value="Tablet Philco">Tablet Philco Intel 16GB</option>
+                <option value="Tablet Huawei">Tablet Huawei 16GB</option>
+            </select>
+
+            <label>Precio Unitario</label>
+            <input type="text" id="precio1" readonly>
+
+            <label>Cantidad</label>
+            <input type="number" id="cantidad1" min="1">
+
+            <button onclick="calcularSubtotal(1)">Subtotal</button>
+
+            <label>Subtotal</label>
+            <input type="text" id="subtotal1" readonly>
+        </div>
+
+        <div class="articulo">
+            <h3>Artículo 3</h3>
+            <label>Artículo</label>
+            <select onchange="actualizarPrecio(this, 2)">
+                <option value="">--Seleccione un Artículo</option>
+                <option value="Vaio Intel Core i3">Notebook Vaio Intel Core i3</option>
+                <option value="Lenovo Intel Core i7">Notebook Lenovo Intel Core i7</option>
+                <option value="Compaq Intel Cre i7">Notebook Compaq Intel Core i7</option>
+                <option value="RCA Intel Core i3">Notebook RCA Intel Core i3</option>
+                <option value="BGH Core i7">Notebook Positivo BGH Core i7</option>
+                <option value="Impresora HP">Impresora Multifunción HP</option>
+                <option value="Tablet Philco">Tablet Philco Intel 16GB</option>
+                <option value="Tablet Huawei">Tablet Huawei 16GB</option>
+            </select>
+
+            <label>Precio Unitario</label>
+            <input type="text" id="precio2" readonly>
+
+            <label>Cantidad</label>
+            <input type="number" id="cantidad2" min="1">
+
+            <button onclick="calcularSubtotal(2)">Subtotal</button>
+
+            <label>Subtotal</label>
+            <input type="text" id="subtotal2" readonly>
+        </div>
+    </div>
+
+    <div class="total-box">
+        <button onclick="calcularTotal()">Calcular Total</button>
+
+        <label>Total de Venta</label>
+        <input type="text" id="total" readonly>
+
+        <button onclick="resetear()">Resetear</button>
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
