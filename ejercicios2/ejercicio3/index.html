@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Series</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th colspan="2">Seleccione una Serie</th>
+        </tr>
+        <tr>
+            <th>Series</th>
+            <td> 
+                <select id="series">
+                    <option value="0">Seleccione una Serie</option>
+                    <option value="1">Dr. House</option>
+                    <option value="2">Prision Break</option>
+                    <option value="3">The Walking Dead</option>
+                    <option value="4">Game of Throne</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th>Dia</th>
+            <td>
+                <input type="text" readonly="readonly" id="dia">
+            </td>
+        </tr>
+        <tr>
+            <th>Horario</th>
+            <td>
+                <input type="text" readonly="readonly" id="hora">
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2"> 
+                <button id="enviar" onclick="cargar()">Enviar</button>
+                <button id="reset" onclick="limpiar()"> Resetear</button>
+            </th>
+        </tr>
+    </table>
+
+    <script src="./js/funciones.js"></script>
+</body>
+</html>
