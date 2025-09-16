@@ -8,6 +8,9 @@ Además, se incluyen recursos complementarios y capturas de pantalla que ilustra
 ## 📁 Estructura del repositorio
 ```bash
 html-css-js/
+├── ejercicios2/
+│   ├── docs/  # Guia 2 de Ejercicios
+│   ├── img/  # Captura de pantalla de la Guia 2
 ├── ejercicios/
 │   ├── docs/         # Guia de Ejercicios
 │   │   └── Ejercicios-html-css-js.pdf
@@ -21,7 +24,8 @@ html-css-js/
 ```
 ## 📄 Guía de ejercicios
 
-📘 [Ver guía en PDF](./ejercicios/docs/Ejercicios-html-css-js.pdf)
+📘 [Ver Guía 1 en PDF](./ejercicios/docs/Ejercicios-html-css-js.pdf)
+📘 [Ver Guía 2 en PDF](./ejercicios2/docs/Ejercicios2_js.pdf)
 
 > La guía contiene instrucciones paso a paso para cada ejercicio realizado.
 
@@ -48,7 +52,20 @@ html-css-js/
 
 ---
 
-✏️ *Las capturas de los ejercicios restantes se encuentran en la carpeta `/ejercicios/img`.*
+### 
+
+![Captura de la Guia 2](./ejercicios2/img/19-27-30.png)
+
+---
+
+### 
+
+![Captura de la Guia 2](./ejercicios2/img/19-28-24.png)
+
+---
+
+
+✏️ *Las capturas de los ejercicios restantes se encuentran en la carpeta `/ejercicios/img` y `/ejercicios2/img`.*
 
 ---
 
@@ -58,7 +75,5 @@ html-css-js/
 - Documentar el proceso de aprendizaje con buenas prácticas  
 
 ---
-
-## 🙌 Autor
 
 **Robinson**  
